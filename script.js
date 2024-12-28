@@ -6,3 +6,15 @@ clickButton.addEventListener('click', () =>{
     
     //console.log("btn clicked");
 });
+
+//mouse over and mouse out events
+
+const hoverBox=document.getElementById('hoverBox');
+const hoverMessage=document.getElementById('hoverMessage');
+hoverBox.addEventListener('mouseover', () =>{
+    hoverMessage.textContent='Mouse is over the box';
+});
+hoverBox.addEventListener('mouseout', () => {
+    hoverMessage.textContent='Mouse left the box';
+     console.log("testing");
+});
