@@ -16,5 +16,5 @@ hoverBox.addEventListener('mouseover', () =>{
 });
 hoverBox.addEventListener('mouseout', () => {
     hoverMessage.textContent='Mouse left the box';
-     console.log("testing");
+     //console.log("testing");
 });
