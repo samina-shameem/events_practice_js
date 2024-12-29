@@ -27,3 +27,15 @@ keyInput.addEventListener('keyup',(event) =>{
 
     //console.log("keybord event");
 });
+
+//form submit event
+
+const submitForm=document.getElementById('submitForm');
+const formMessage=document.getElementById('formMessage');
+submitForm.addEventListener('submit', (event) => {
+    event.preventDefault();//prevent form refreshing the page
+    const name=document.getElementById('name').value;
+    formMessage.textContent=`Hello, ${name}`;
+
+             //console.log("form submit");
+});
