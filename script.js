@@ -18,3 +18,12 @@ hoverBox.addEventListener('mouseout', () => {
     hoverMessage.textContent='Mouse left the box';
      //console.log("testing");
 });
+
+//keyboard event
+const keyInput=document.getElementById('keyInput');
+const keyMessage=document.getElementById('keyMessage');
+keyInput.addEventListener('keyup',(event) =>{
+    keyMessage.textContent=`You pressed: ${event.key}`;
+
+    //console.log("keybord event");
+});
